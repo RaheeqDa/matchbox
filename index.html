@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f7f2" />
+  <title>Matchbox — Find the right AI for the task</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Matchbox home">
+        <span class="brand-mark"><span></span></span>
+        <span>matchbox</span>
+      </a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#tasks">Find a tool</a>
+        <a href="#compare">Compare</a>
+        <a href="#projects">Made with AI</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> YOUR AI SHORTLIST</div>
+        <h1>Which AI should<br />I use for <span class="underlined">this</span>?</h1>
+        <p>Turn a confusing AI toolbox into a simple choice. Match the right helper to your next student task.</p>
+        <a class="primary-btn" href="#tasks">Find my tool <span>↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Decorative AI tool selection illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="spark spark-one">✦</div>
+        <div class="spark spark-two">✦</div>
+        <div class="tool-card main-card">
+          <div class="card-top"><span>Perfect for</span><span class="mini-dots">•••</span></div>
+          <div class="big-icon">⌁</div>
+          <h3>Big ideas, clearly written</h3>
+          <div class="choice-row"><span>ChatGPT</span><b>92%</b></div>
+          <div class="choice-track"><span></span></div>
+        </div>
+        <div class="tool-card float-card left-card"><span class="avatar purple">C</span><div><b>Claude</b><small>Deep reading</small></div></div>
+        <div class="tool-card float-card right-card"><span class="avatar blue">G</span><div><b>Gemini</b><small>Connected research</small></div></div>
+      </div>
+    </section>
+
+    <section class="tasks section" id="tasks">
+      <div class="section-heading">
+        <div>
+          <span class="kicker">01 / TASKS</span>
+          <h2>Start with what you need.</h2>
+        </div>
+        <p>Pick a task. I'll point you toward the strongest option.</p>
+      </div>
+
+      <div class="task-grid">
+        <button class="task-card" data-tool="ChatGPT" data-reason="Great for drafting, rewriting, and shaping a clear argument."><span class="task-icon coral">✎</span><span class="task-name">Writing</span><span class="task-arrow">↗</span></button>
+        <button class="task-card" data-tool="GitHub Copilot" data-reason="Built to autocomplete code and explain unfamiliar codebases."><span class="task-icon lime">&lt;/&gt;</span><span class="task-name">Coding</span><span class="task-arrow">↗</span></button>
+        <button class="task-card" data-tool="Gemini" data-reason="Useful for searching, summarizing, and connecting sources."><span class="task-icon blue">◎</span><span class="task-name">Research</span><span class="task-arrow">↗</span></button>
+        <button class="task-card" data-tool="Claude" data-reason="Excellent for long notes, study guides, and thoughtful explanations."><span class="task-icon yellow">▤</span><span class="task-name">Studying</span><span class="task-arrow">↗</span></button>
+        <button class="task-card" data-tool="Gemini" data-reason="Strong for visual ideas and image generation workflows."><span class="task-icon pink">◈</span><span class="task-name">Images</span><span class="task-arrow">↗</span></button>
+        <button class="task-card" data-tool="ChatGPT" data-reason="Fast at organizing slide ideas and creating presenter-ready drafts."><span class="task-icon mint">▣</span><span class="task-name">Slides</span><span class="task-arrow">↗</span></button>
+      </div>
+
+      <div class="recommendation" id="recommendation" aria-live="polite">
+        <span class="recommend-label">QUICK MATCH</span>
+        <strong id="matchName">Choose a task above</strong>
+        <p id="matchReason">We’ll suggest a practical place to start.</p>
+      </div>
+    </section>
+
+    <section class="compare section" id="compare">
+      <div class="section-heading">
+        <div><span class="kicker">02 / COMPARE</span><h2>The popular four.</h2></div>
+        <p>No single “best” AI—just a different superpower.</p>
+      </div>
+      <div class="comparison-wrap">
+        <div class="comparison-row header"><span>Tool</span><span>Best at</span><span>Watch for</span><span>Student vibe</span></div>
+        <article class="comparison-row"><div class="tool-name"><span class="logo gpt">◎</span><b>ChatGPT</b></div><span>Writing & planning</span><span>Check every fact</span><span class="vibe"><i class="dot violet"></i>Versatile</span></article>
+        <article class="comparison-row"><div class="tool-name"><span class="logo claude">C</span><b>Claude</b></div><span>Reading & analysis</span><span>Sometimes cautious</span><span class="vibe"><i class="dot orange"></i>Thoughtful</span></article>
+        <article class="comparison-row"><div class="tool-name"><span class="logo gemini">✦</span><b>Gemini</b></div><span>Research & media</span><span>Varies by mode</span><span class="vibe"><i class="dot blue-dot"></i>Connected</span></article>
+        <article class="comparison-row"><div class="tool-name"><span class="logo copilot">⌁</span><b>Copilot</b></div><span>Coding & Microsoft</span><span>Needs review</span><span class="vibe"><i class="dot green-dot"></i>Hands-on</span></article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-heading">
+        <div><span class="kicker">03 / FIELD NOTES</span><h2>Made by AI, with humans.</h2></div>
+        <p>Student projects showing an AI tool mix.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="writing">Writing</button>
+        <button class="filter" data-filter="coding">Coding</button>
+        <button class="filter" data-filter="research">Research</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card" data-category="research">
+          <div class="project-preview preview-lime"><div class="poster poster-one"><span>THE BIG</span><strong>REWIND</strong><small>Clocks, culture & change</small></div></div>
+          <div class="project-info"><div><span>RESEARCH ZINE</span><h3>The Big Rewind</h3></div><div class="tool-tags"><b>Gemini</b><b>Claude</b></div></div>
+        </article>
+        <article class="project-card" data-category="coding">
+          <div class="project-preview preview-blue"><div class="phone-ui"><div class="phone-head"><span></span><i></i></div><div class="phone-planet">M</div><b>Find your moon.</b></div></div>
+          <div class="project-info"><div><span>MOBILE APP</span><h3>Moon Weather</h3></div><div class="tool-tags"><b>Copilot</b><b>ChatGPT</b></div></div>
+        </article>
+        <article class="project-card" data-category="writing">
+          <div class="project-preview preview-peach"><div class="book"><small>field guide no. 04</small><strong>How to<br />Get Lost</strong><span>◎</span></div></div>
+          <div class="project-info"><div><span>PHOTO ESSAY</span><h3>How to Get Lost</h3></div><div class="tool-tags"><b>ChatGPT</b><b>Gemini</b></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div class="cta-inner">
+        <span class="kicker">THE MOST IMPORTANT TIP</span>
+        <h2>Be curious. Stay critical.</h2>
+        <p>AI is a starting point, not the final answer. Verify sources, protect your work, and keep your own voice.</p>
+        <a class="secondary-btn" href="#top">Back to top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark"><span></span></span><span>matchbox</span></a><p>A friendly guide for student makers.</p><span>© 2026</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
